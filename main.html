@@ -2,92 +2,98 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" class="logo" title="СельхозСервис">
-        <nav>
-            <a class="active" href="#main">Главная</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="price.html">Прайс-листы</a>
-            <a href="sale.html">Скидки и Акции</a>
-            <a href="delivery.html">Доставка</a>
-            <a href="about.html">О нас</a>
-            <a href="contact.html">Контакты</a>
-        </nav>
-    </header>
-    <main>
-        <h4 style="text-align: left;"> </h4>
-        <h4 style="text-align: left;"><strong>Средства защиты растений от вредителей, болезней и сорняков, регуляторы
-                роста растений и удобрения для сада, огорода, цветоводства, городского озеленения, тепличных и
-                фермерских хозяйств, питомников и ландшафтных работ</strong></h4>
-        <h4 style="text-align: left;"><span style="text-decoration: underline;"><strong>ТОЛЬКО У НАС ! ПО ЭКСКЛЮЗИВНЫМ
-                    ЦЕНАМ !</strong></span></h4>
-        <ul>
-            <li><strong
-                    style="color: #00be1f; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px;">
-                    «Рибав-ЭКСТРА» - экологически безупречный универсальный регулятор роста растений - 10 мл, 100 мл, 1
-                    л</strong></li>
-            <li><strong
-                    style="color: #00be1f; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px;">
-                    «КОРНЕВИН» - 3 г, 10 г, 30 г, <span style="text-decoration: underline;">500 г -
-                        супер–упаковка</span></strong></li>
-            <li><strong
-                    style="color: #00be1f; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px;">
-                    ЛОВУШКИ желтые клеевые в пластинах и рулонах для отлова насекомых-вредителей и проведения
-                    мониторинга в теплицах, оранжереях и питомниках</strong></li>
-            <li><strong
-                    style="color: #00be1f; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px;"><strong>«ПОЯС
-                        ЛОВЧИЙ» 14 Х 100 см</strong></strong></li>
-            <li><strong
-                    style="color: #00be1f; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px;">ЗАМАЗКА
-                    САДОВАЯ ПРОТИВОРАКОВАЯ «ЗСП»</strong></li>
-            <li><strong
-                    style="color: #00be1f; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px;">ЗАМАЗКА
-                    для деревьев универсальная</strong></li>
-            <li><strong
-                    style="color: #00be1f; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px;">Клей
-                    «УНИФЛЕКС»- против грызунов и насекомых</strong></li>
-        </ul>
+        <!--Готовый header, есть адаптивноть, но криво-->
+        <header>
+                <img src="img/main/logo.png" class="logo" title="СельхозСервис">
+                <nav>
+                        <a class="active" href="#main">Главная</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="price.html">Прайс-листы</a>
+                        <a href="sale.html">Скидки и Акции</a>
+                        <a href="delivery.html">Доставка</a>
+                        <a href="about.html">О нас</a>
+                        <a href="contact.html">Контакты</a>
+                </nav>
+        </header>
+
+        <main>
+                <!--Готовый визуально фото с тексом, адаптивности нет-->
+                <section>
+                        <div class="selection_begin_photo">
+                                <img src="img/main/dacha4.jpg"
+                                        style="max-width: 100%; background-size: cover; margin: 0;"><span
+                                        class="begin_text">Средства защиты растений от вредителей, болезней и сорняков,
+                                        регуляторы
+                                        роста растений и удобрения для сада, огорода, цветоводства, городского
+                                        озеленения,
+                                        тепличных и фермерских хозяйств, питомников и ландшафтных работ.</span></div>
+
+                </section>
+                <!--Очень корявый блок со списком, адаптивности нет-->
+                <section>
+                        <div class="block_list">
+                                <div class="item"><span class="esclusive">Эксклюзивные цены!</span>
+                                        <ul>
+                                                <li class="item_block_list"><span class="item_item">«Рибав-ЭКСТРА» -
+                                                                экологически безупречный универсальный регулятор роста
+                                                                растений - 10 мл, 100 мл, 1 л</span></li>
+                                                <li class="item_block_list"><span class="item_item">«КОРНЕВИН» - 3 г, 10
+                                                                г, 30 г, 500 г - супер–упаковка</span></li>
+                                                <li class="item_block_list"><span class="item_item">ЛОВУШКИ желтые
+                                                                клеевые в пластинах и рулонах для отлова
+                                                                насекомых-вредителей и проведения мониторинга в
+                                                                теплицах, оранжереях и питомниках</span></li>
+                                                <li class="item_block_list"><span class="item_item">«ПОЯС ЛОВЧИЙ» 14 Х
+                                                                100 см</span></li>
+                                                <li class="item_block_list"><span class="item_item">ЗАМАЗКА САДОВАЯ
+                                                                ПРОТИВОРАКОВАЯ «ЗСП»</span></li>
+                                                <li class="item_block_list"><span class="item_item">ЗАМАЗКА для деревьев
+                                                                универсальная</span></li>
+                                                <li class="item_block_list"><span class="item_item">Клей «УНИФЛЕКС»-
+                                                                против грызунов и насекомых</span></li>
+                                        </ul>
+                                </div>
 
 
-        <table style="margin-left: auto; margin-right: auto;" border="0">
-            <tbody>
-                <tr>
-                    <td style="text-align: center;"><img src="img/9.jpg" border="0" width="100" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                    <td style="text-align: center;"><img src="img/poyas_main.png" border="0" width="57" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                    <td style="text-align: center;"><img src="img/1.jpg" border="0" width="74" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                    <td style="text-align: center;"><img src="img/2.jpg" border="0" width="100" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                </tr>
-                <tr>
-                    <td><img src="img/1.jpg" border="0" width="100" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                    <td><img src="img/7.jpg" border="0" width="100" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                    <td><img src="img/3.jpg" border="0" width="100" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                    <td> <img src="img/l_k_1.jpg" border="0" width="45" height="100"
-                            style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-    <footer>
-        <div class="container">
-            <a href="tel:8 (495) 647-00-58">8 (495) 647-00-58</a>
-            <a href="tel:8 916 254-21-12">8 916 254-21-12</a>
-            <a href="mailto:selhozservis@rambler.ru">selhozservis@rambler.ru</a>
-            <div class="copyright">Copyright © 2020. All Rights Reserved.</div>
-        </div>
-    </footer>
+                        </div>
+
+                </section>
+                <!--Готовые блоки с картинками, адаптивности нет, ссылок нет, размеры уточнить-->
+                <section class="block_advertising">
+                        <div class="container8">
+                                <div class="box"><img src="img/main/9.jpg" class="img_block_advertising"></div>
+                                <div class="box"><img src="img/main/poyas_main.png" class="img_block_advertising"></div>
+                                <div class="box"><img src="img/main/5.jpg" class="img_block_advertising"></div>
+                                <div class="box"><img src="img/main/2.jpg" class="img_block_advertising"></div>
+                                <div class="box"><img src="img/main/1.jpg" class="img_block_advertising"></div>
+                                <div class="box"><img src="img/main/7.jpg" class="img_block_advertising"></div>
+                                <div class="box"><img src="img/main/3.jpg" class="img_block_advertising"></div>
+                                <div class="box"><img src="img/main/l_k_1.jpg" class="img_block_advertising"></div>
+                        </div>
+                </section>
+
+        </main>
+        <!--Разбито на три колонки, остального нет, адаптивности нет-->
+        <footer>
+                <div class="col1">Контакты<div>
+                                <nav>
+                                        <a href="#">8 (495) 647-00-58</a>
+                                        <a href="#">8 (916) 254-21-12</a>
+                                        <a href="#">selhozservis@rambler.ru</a></nav>
+                        
+                                </div>
+                </div>
+                <div class="col2">Адрес</div>
+                <div class="col3">Ссылки</div>
+
+        </footer>
 </body>
 
 </html>

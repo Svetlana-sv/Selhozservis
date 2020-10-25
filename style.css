@@ -2,80 +2,233 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "SourceSerifPro-Regular";
+    src: url("/fonts/SourceSerifPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SourceSerifPro-Bold";
+    src: url("/fonts/SourceSerifPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "SourceSerifPro-SemiBold";
+    src: url("/fonts/SourceSerifPro-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "SourceSerifPro-Light";
+    src: url("/fonts/SourceSerifPro-Light.ttf");
+}
+
 body {
     margin: 0;
+    background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     overflow: hidden;
-    background-color: #00a658;
-    padding: 20px 10px;
+    min-height: 114px;
+    border-bottom: 2px solid #3a5901;
+    background-color: #86b72f;
 }
 
 header a {
+    font-family: "Source Serif Pro-Regular";
     float: left;
     color: #fff;
     text-align: center;
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    border-radius: 3px;
 }
 
 header img.logo {
-    padding: 0;
+    padding-top: 14px;
+    padding-left: 19px;
+    width: 150px;
+    height: 87px;
 }
 
 header a:hover {
-    background-color: #29b47371;
+    background-color: #a5e731;
     color: #363637;
 }
 
 header a.active {
-    background-color: #29b47371;
+    background-color: #a5e731;
 }
 
 nav {
-    padding-top: 20px;
+    padding-top: 35px;
+    padding-bottom: 33px;
     float: right;
-    padding-right: 60px;
+    padding-right: 116px;
 }
 
 @media screen and (max-width: 500px) {
+    header {
+        text-align: center;
+    }
+
     header a {
+        height: none;
         float: none;
         display: block;
         text-align: center;
     }
 
     nav {
+        text-align: center;
         float: none;
     }
 
-    header img.logo {
-        padding-bottom: 10px;
-        text-align: center;
+    .begin_text {
+        font-size: 18px;
+    }
+
+    .selection_begin_photo {
+        background-image: url(img/main/dacha4_mobile.jpg);
     }
 }
+
+.selection_begin_photo {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+
+.begin_text {
+    position: absolute;
+    color: #ffffff;
+    font-family: "SourceSerifPro-SemiBold";
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    bottom: 10px;
+    left: 10px;
+}
+
+.block_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+    background-color: #00463f;
+    color: white;
+    padding: 0;
+}
+.item{
+    min-width: 50%;
+    max-width: 80%;
+    padding: 10px;
+    background-color: #009688;
+    text-align: center;
+    padding-top: 68px;
+    
+  }
+  .item_block_list{
+      list-style: none;
+      background: url(img/main/tick.png) no-repeat;
+      padding-left: 24px;
+      padding-bottom: 50px;
+      width: 463px;
+  }
+  .item_item{
+    font-family: "Source Serif Pro-Regular";
+    color: #000000;
+    font-size: 14px;
+font-weight: 400;
+
+
+  }
+  .esclusive{
+      font-family: "SourceSerifPro-SemiBold";
+      color: #86b72f;
+      font-size: 32px;
+font-weight: 400;
+text-align: center;
+  }
+
+.container8 {
+    max-width: 1129px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 43px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 10px solid #79a42e;
+    background-color: #ffffff;
+    padding-bottom: 48px;
+    text-align: center;
+
+}
+
+.img_block_advertising {
+    height: 213px;
+    margin-top: 9px;
+}
+
 /* FOOTER */
-footer{
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+    font-family: 'Arial';
     overflow: hidden;
-    clear: both;
-    background-color: #363637;
+    color: white;
+    padding: 20px;
     bottom: 0;
     left: 0;
-    height: 100px;
+    max-width: 100%;
+    min-height: 198px;
+    border-top: 1px solid #597b19;
+    background-color: #d2ddc0;
 }
-.copyright{
-    color: #fff;
+
+.copyright {
+    color: #000;
+    font-family: "SourceSerifPro-Light";
     vertical-align: text-bottom;
     text-align: center;
 }
-footer div.container{
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, auto-fit);
-    grid-template-rows: repeat(auto-fit, auto-fit);
+.col1,.col2{
+    margin-right: 200px;
 }
+.col1,.col2,.col3 {
+    
+    min-width: 20%;
+    padding: 10px;
+    background-color: #009688;
+    text-align: center;
+    
+}
+footer nav{
+    padding: 5px;
+}
+footer a{
+    font-family: "Source Serif Pro-Light";
+    color: #000;
+    text-align: center;
+   
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
