@@ -1,130 +1,133 @@
-h2 {
-    font-size: 14px;
-    font-family: "SourceSerifPro-Regular";
-    color: rgb(1, 1, 1);
-    font-weight: bold;
-    line-height: 2.208;
-    text-align: center;
-    position: absolute;
-    z-index: 15;
-}
-
-.adress {
-    left: 312.906px;
-    top: 247.107px;
-
-}
-
-.email_contact {
-
-    left: 312.453px;
-    top: 281.544px;
-
-}
-
-.tel {
-
-    left: 312.719px;
-    top: 322.044px;
-
-}
-
-.adress_text {
-
-    text-align: left;
-
-    left: 382.578px;
-    top: 255.86px;
-    width: 428px;
-    height: 46px;
-
-}
-
-.email_contact_text {
-
-    left: 381.344px;
-    top: 307.656px;
-
-}
-
-.tel_text {
-
-    left: 382.312px;
-    top: 352.232px;
-
-}
-.note{
-    
-        left: 312.453px;
-        top: 423.044px;
-       
-      
-}
-.note_text{
-    
-    
-        left: 435.546px;
-        top: 429.159px;
-        width: 467px;
-        height: 45px;
-    
-      
-      
-}
-
-.img_office {
-    width: 310px;
-    height: 175px;
-
-
-
-}
-
-.map {
-    margin-top: 400px;
-}
-
-footer {
-    margin-top: 50px;
-    border-top: 1px solid rgb(89, 123, 25);
-    background-color: rgb(210, 221, 192);
-    top: 818px;
+/*MAIN*/
+.container {
+    margin: 0;
     max-width: 100%;
-    height: 199px;
-   
-
-}
-
-
-
-.container_footer {
-    
-    max-width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    height: 100%;
     flex-wrap: wrap;
-
 }
-.footer_item {
-    max-width: 300px;
+
+.container2 {
+    max-width: 923px;
+    background-color: #f7f8f7;
+    margin: 0 auto;
+}
+
+.about_title {
+    padding-top: 28px;
+    padding-bottom: 59px;
+    text-align: center;
+}
+
+.text_and_img {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about_text {
+    max-width: 55%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about_text2 {
+    max-width: 100%;
+    margin-left: 53px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+
+.col1 {
+    max-width: 20.68%;
+}
+
+.col2 {
+    width: 75.5%;
+}
+
+.contact_img {
+    width: 35%;
+    position: relative;
+   margin-right: 31px;
+}
+.img_office {
+    width: 310px;
+    height: 175px;
+    padding-top: 10px;
+}
+
+
+.map {
+    padding-top: 74px;
+}
+
+@media (max-width: 1199px) {
+    .contact_contact{
+        max-width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .about_text{
+        max-width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+    .about_text2{
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container2 {
+        max-width: 90%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .contact_img{
+        width: 100%;
+        margin-right: 53px;
+    }
    
+    .text_and_img{
+        flex-direction: column;
+    }
 }
 
-.footer_item_title {
-        font-size: 32px;
-        font-family: "SourceSerifPro-Light";
-        color: rgb(0, 0, 0);
-        line-height: 0.966;
-        text-align: center;  
+.title32 {
+    font-size: 32px;
+    font-family: "SourceSerifPro-SemiBold";
+    color: rgb(134, 183, 47);
+    font-weight: bold;
+    line-height: 0.966;
 }
-
-.footer_item_content {
-        font-size: 18px;
-        font-family: "SourceSerifPro-Light";
-        color: rgb(0, 0, 0);
-        line-height: 1.717;
-        text-align: center;   
+.text14Regular{
+    font-size: 14px;
+    font-family: "SourceSerifPro-Regular";
+    color: rgb(1, 1, 1);
+    line-height: 2.208;
+}
+.text14SemiBold{
+    font-size: 14px;
+    font-family: "SourceSerifPro-SemiBold";
+    font-weight: bold;
+    color: rgb(1, 1, 1);
+    line-height: 2.208;
 }
