@@ -1,0 +1,101 @@
+/*MAIN FOR MAIN*/
+
+.selection_begin_photo {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+
+.begin_text {
+    position: absolute;
+    color: #ffffff;
+    font-family: "SourceSerifPro-SemiBold";
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    bottom: 10px;
+    left: 10px;
+}
+
+.block_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+    background-color: #00463f;
+    color: white;
+    padding: 0;
+}
+
+.item {
+    min-width: 50%;
+    max-width: 80%;
+    padding: 10px;
+    background-color: #009688;
+    text-align: center;
+    padding-top: 68px;
+
+}
+
+.item_block_list {
+    list-style: none;
+    background: url(img/main/tick.png) no-repeat;
+    padding-left: 24px;
+    padding-bottom: 50px;
+    width: 463px;
+}
+
+.item_item {
+    font-family: "Source Serif Pro-Regular";
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+
+
+}
+
+.esclusive {
+    font-family: "SourceSerifPro-SemiBold";
+    color: #86b72f;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container8 {
+    max-width: 1129px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 43px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #79a42e;
+    background-color: #ffffff;
+    padding-bottom: 48px;
+    text-align: center;
+
+}
+
+.img_block_advertising {
+    height: 213px;
+    margin-top: 9px;
+}
+@media screen and (max-width: 500px) {
+
+    .begin_text {
+        font-size: 18px;
+    }
+
+    .selection_begin_photo {
+        background-image: url(img/main/dacha4_mobile.jpg);
+    }
+}

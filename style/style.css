@@ -27,52 +27,158 @@ body {
     background-color: #fff;
 }
 
-  
-main{
+
+main {
     max-width: 100%;
     max-height: 100%;
-   
-    
+
+
     align-items: center;
-    align-content: center; 
-    justify-content: center; 
-    overflow: auto;  
-    
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+
 }
+
 ul {
     padding: 0;
-  }
-  
-  ul li {
+}
+
+ul li {
     list-style-type: none;
-  }
-.container_center{
+}
+/*из contact для каркаса*/
+.container {
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    width: 923px;
+    background-color: #f7f8f7;
+    margin: 0 auto;
+}
+
+.about_title {
+    padding-top: 28px;
+    padding-bottom: 59px;
+    text-align: center;
+    font-size: 32px;
+    font-family: "SourceSerifPro-SemiBold";
+    color: rgb(134, 183, 47);
+    font-weight: bold;
+    line-height: 0.966;
+}
+
+.content {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+
+.text14Regular{
+    font-size: 14px;
+    font-family: "SourceSerifPro-Regular";
+    color: rgb(1, 1, 1);
+    line-height: 2.208;
+}
+.text14SemiBold{
+    font-size: 14px;
+    font-family: "SourceSerifPro-SemiBold";
+    font-weight: bold;
+    color: rgb(1, 1, 1);
+    line-height: 2.208;
+}
+/**/
+
+.container_center {
     max-width: 80%;
     margin-top: 114px;
     background: #60a839;
     margin: 0 auto;
 }
-a{
+
+a {
     text-decoration: none;
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
 
-a:visited{
+footer a:visited {
     color: #000000;
-} 
+}
 
 p {
     margin-top: 0;
-  }
+}
+header .header_logo {
+    padding-left: 25px;
+}
+
+header .header_menu {
+    max-width: 70%;
+    align-items: center;
+}
+
+header .header_email {
+    padding-right: 25px;
+    max-width:100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .img_message {
+    width: 20px;
+    height: 14px;
+    align-items: center;
+}
+
+header div.img_email_message {
+    max-width: 15%;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+header div.img_email_textmessage {
+max-width: 85%;
+    height: 100%;
+}
 
 
 header {
-    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     min-height: 114px;
     border-bottom: 2px solid #3a5901;
     background-color: #86b72f;
+}
+.header_container{
+    padding-top: 10px;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header a {
@@ -89,34 +195,33 @@ header a {
 }
 
 header img.logo {
-    padding-top: 14px;
-    padding-left: 19px;
-    width: 150px;
-    height: 87px;
+    width: 94px;
+    height: 92px;
 }
 
-header a:hover {
-        border-radius: 20px;
-        background-color: rgb(165, 231, 49);
-      }
-      
+header div.header_menu a:hover {
+    border-radius: 20px;
+    background-color: rgb(165, 231, 49);
+}
+header div.header_email a:hover{
+    text-decoration: underline;
+}
+
 header a.active {
-        border-radius: 20px;
-        background-color: rgb(165, 231, 49);   
+    border-radius: 20px;
+    background-color: rgb(165, 231, 49);
 }
 
-nav {
-    padding-top: 35px;
-    padding-bottom: 33px;
-    float: right;
-    padding-right: 116px;
-}
+
 
 @media screen and (max-width: 500px) {
     header {
         text-align: center;
     }
-
+    .header_container{
+        flex-direction: column;
+    }
+    
     header a {
         height: none;
         float: none;
@@ -124,107 +229,15 @@ nav {
         text-align: center;
     }
 
-    nav {
+    .header_menu {
         text-align: center;
         float: none;
-    }
-
-    .begin_text {
-        font-size: 18px;
-    }
-
-    .selection_begin_photo {
-        background-image: url(img/main/dacha4_mobile.jpg);
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
-/*MAIN FOR MAIN*/
-
-.selection_begin_photo {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-}
-
-
-.begin_text {
-    position: absolute;
-    color: #ffffff;
-    font-family: "SourceSerifPro-SemiBold";
-    font-size: 32px;
-    line-height: normal;
-    letter-spacing: 1.6px;
-    bottom: 10px;
-    left: 10px;
-}
-
-.block_list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Arial';
-    background-color: #00463f;
-    color: white;
-    padding: 0;
-}
-.item{
-    min-width: 50%;
-    max-width: 80%;
-    padding: 10px;
-    background-color: #009688;
-    text-align: center;
-    padding-top: 68px;
-    
-  }
-  .item_block_list{
-      list-style: none;
-      background: url(img/main/tick.png) no-repeat;
-      padding-left: 24px;
-      padding-bottom: 50px;
-      width: 463px;
-  }
-  .item_item{
-    font-family: "Source Serif Pro-Regular";
-    color: #000000;
-    font-size: 14px;
-font-weight: 400;
-
-
-  }
-  .esclusive{
-      font-family: "SourceSerifPro-SemiBold";
-      color: #86b72f;
-      font-size: 32px;
-font-weight: 400;
-text-align: center;
-  }
-
-.container8 {
-    max-width: 1129px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 43px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-
-.box {
-    width: 200px;
-    height: 200px;
-    border: 10px solid #79a42e;
-    background-color: #ffffff;
-    padding-bottom: 48px;
-    text-align: center;
-
-}
-
-.img_block_advertising {
-    height: 213px;
-    margin-top: 9px;
-}
 
 
 /*FOOTER готов, но надо выравнять divы*/
@@ -232,6 +245,9 @@ footer {
     border-top: 1px solid rgb(89, 123, 25);
     background-color: rgb(210, 221, 192);
     width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
     display: flex;
     padding-bottom: 20px;
     justify-content: space-between;
@@ -273,7 +289,7 @@ footer {
 }
 
 .footer_item {
-    width: 30%;
+    width: 300px;
     text-align: center;
 }
 
@@ -294,7 +310,10 @@ footer {
     line-height: 1.717;
     text-align: center;
 }
-
+.footer_menu_item_content{
+    text-align: center;
+    
+}
 
 @media (max-width: 1199px) {
     footer .footer_list {

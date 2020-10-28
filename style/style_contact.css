@@ -1,32 +1,4 @@
 /*MAIN*/
-.container {
-    margin: 0;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.container2 {
-    max-width: 923px;
-    background-color: #f7f8f7;
-    margin: 0 auto;
-}
-
-.about_title {
-    padding-top: 28px;
-    padding-bottom: 59px;
-    text-align: center;
-}
-
-.text_and_img {
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-}
 
 .about_text {
     max-width: 55%;
@@ -62,30 +34,24 @@
    margin-right: 31px;
 }
 .img_office {
-    width: 310px;
-    height: 175px;
+    
     padding-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 
 .map {
     padding-top: 74px;
 }
+@media (min-width: 1920px){
+
+   
+    
+}
 
 @media (max-width: 1199px) {
-    .contact_contact{
-        max-width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -ms-flex-wrap: wrap;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0;
-    }
     .about_text{
         max-width: 100%;
         margin: 0;
@@ -106,28 +72,8 @@
         margin-right: 53px;
     }
    
-    .text_and_img{
+    .content{
         flex-direction: column;
     }
 }
 
-.title32 {
-    font-size: 32px;
-    font-family: "SourceSerifPro-SemiBold";
-    color: rgb(134, 183, 47);
-    font-weight: bold;
-    line-height: 0.966;
-}
-.text14Regular{
-    font-size: 14px;
-    font-family: "SourceSerifPro-Regular";
-    color: rgb(1, 1, 1);
-    line-height: 2.208;
-}
-.text14SemiBold{
-    font-size: 14px;
-    font-family: "SourceSerifPro-SemiBold";
-    font-weight: bold;
-    color: rgb(1, 1, 1);
-    line-height: 2.208;
-}

@@ -4,66 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="img/message.png">
+    <link rel="stylesheet" href="style/style_catalog.css">
+    <link rel="stylesheet" href="style/style.css">
+    
     <title>Каталог</title>
 </head>
 
 <body>
     <header>
-        <img src="img/logo_white.png" class="logo" title="СельхозСервис">
-        <nav>
-            <a href="main.html">Главная</a>
-            <a class="active" href="#catalog">Каталог</a>
-            <a href="price.html">Прайс-листы</a>
-            <a href="sale.html">Скидки и Акции</a>
-            <a href="delivery.html">Доставка</a>
-            <a href="about.html">О нас</a>
-            <a href="contact.html">Контакты</a>
-        </nav>
-    </header>
-    <main></main>
-    <footer>
-        <div class="container_footer">
-            <div class="footer_list">
-                <div class="footer_item">
-                    <div class="footer_item_title">
-                        <p class="text32Light">Контакты</p>
-                    </div>
-                    <div class="footer_item_content">
-                        <p>
-                            8 (495) 647-00-58 <br> 8 (916) 254-21-12 <br> selhozservis@rambler.ru
-                        </p>
-                    </div>
-                </div>
-
-                <div class="footer_item">
-                    <div class="footer_item_title">
-                        Адрес
-                    </div>
-                    <div class="footer_item_content">
-                        Слободской пер., д.6, строение 10
-                        Территория завода «Моштамп»,
-                        внутр. номер 128
-                    </div>
-                </div>
-
-                <div class="footer_item">
-                    <div class="footer_item_title">
-                        Ссылки
-                    </div>
-                    <div class="footer_item_content">
-                        <div class="footer_menu_item_content">
-                            <ul>
-                                <li><a href="price.html">Прайс-листы</a></li>
-                                <li><a href="catalog.html">Каталог</a></li>
-                                <li><a href="about.html">О компании</a></li>
-                                <li><a href="contact.html">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="header_container">
+            <div class="header_logo">
+                <img src="img/logo_white.png" class="logo" title="СельхозСервис">
+            </div>
+            <div class="header_menu">
+                <nav>
+                    <a href="main.html">Главная</a>
+                    <a class="active" href="#catalog">Каталог</a>
+                    <a href="sale.html">Скидки и Акции</a>
+                    <a href="delivery.html">Доставка</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contact.html">Контакты</a>
+                </nav>
+            </div>
+            <div class="header_email">
+                <div class="img_email_message" style="margin-right:20px;"><img src="img/message.png" class="img_message"></div>
+                <div id="header" style="max-width: 85%;
+                height: 100%;"></div>
+               
             </div>
         </div>
-    </footer>
+    </header>
+    <main>
+
+
+        <div id="products"></div>
+        <div id="shopping"></div>
+        
+    
+        <!-- Constants and Utils -->
+        <script src="constants/root.js"></script>
+        <script src="utils/localStorageUtil.js"></script>
+        <script src="constants/catalog.js"></script>
+    
+        <!-- Header -->
+        <script src="components/Header/Header.js"></script>
+        <link rel="stylesheet" href="components/Header/Header.css">
+    
+        <!-- Products -->
+        <script src="components/Products/Products.js"></script>
+        <link rel="stylesheet" href="components/Products/Products.css">
+    
+        <!-- Shopping -->
+        <script src="components/Shopping/Shopping.js"></script>
+        <link rel="stylesheet" href="components/Shopping/Shopping.css">
+    
+        <script src="index.js"></script>
+
+
+
+    </main>
+    
 </body>
 
 </html>
