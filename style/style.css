@@ -61,6 +61,7 @@ ul li {
     width: 923px;
     background-color: #f7f8f7;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .about_title {
@@ -80,6 +81,7 @@ ul li {
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
+    
 }
 
 
@@ -148,7 +150,7 @@ header .img_message {
 }
 
 header div.img_email_message {
-    max-width: 15%;
+    max-width: 20%;
     align-items: center;
     vertical-align: middle;
     height: 100%;
@@ -187,6 +189,7 @@ header a {
     color: #fff;
     text-align: center;
     padding: 12px;
+    margin: 3px;
     text-decoration: none;
     font-size: 18px;
     line-height: normal;
@@ -201,7 +204,7 @@ header img.logo {
 
 header div.header_menu a:hover {
     border-radius: 20px;
-    background-color: rgb(165, 231, 49);
+    background-image: linear-gradient(to right, #c8f151, #b9ee38, #a5e731);
 }
 header div.header_email a:hover{
     text-decoration: underline;
@@ -209,7 +212,8 @@ header div.header_email a:hover{
 
 header a.active {
     border-radius: 20px;
-    background-color: rgb(165, 231, 49);
+    background-image: linear-gradient(to right, #c8f151, #b9ee38, #a5e731);
+    box-shadow: 0 0 4px 2px #fff;
 }
 
 

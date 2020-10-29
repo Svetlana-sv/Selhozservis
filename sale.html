@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_sale.css">
     <title>Скидки и акции</title>
 </head>
 
@@ -24,77 +25,65 @@
                 </nav>
             </div>
             <div class="header_email">
-                <div class="img_email_message"><img src="img/message.png" class="img_message"></div>
-                <div class="img_email_textmessage"><a href="#">selhozservis@rambler.ru</a></div>
-               
+                <div class="img_email_message" style="margin-right:20px;"><img src="img/message.png"
+                        class="img_message"></div>
+                <div id="header" style="max-width: 85%;
+                height: 100%;"></div>
             </div>
         </div>
     </header>
     <main>
-        <h1>Скидки и акции</h1>
-        <table>
-            <tr>
-                <td></td>
-                <td><strong
-                        style="color: rgb(51, 153, 102); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px;"><span
-                            style="text-decoration-line: underline;">препараты, реализуемые с товарным
-                            знаком</span></strong>
-                    <div><strong
-                            style="color: rgb(51, 153, 102); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px;"><span
-                                style="text-decoration-line: underline;">«сельхозэкосервис» ( отмечено в прайсе
-                                **)</span></strong>
-                </td>
-                <td><strong
-                        style="color: rgb(51, 153, 102); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px;"><span
-                            style="text-decoration-line: underline;">препараты наших партнеров (коммерческий
-                            прайс)</span></strong></td>
-            </tr>
-            <tr>
-                <td>2%</td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;">от
-                        18500 до 37 000 руб.</strong></td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;">от
-                        20000 до 40 000 руб.</strong></td>
-            </tr>
-            <tr>
-                <td>3%</td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;">от
-                        38 000 до 76 000 руб.</strong></td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;"><strong>от
-                            40000 до 90 000 руб.</strong></strong></td>
-            </tr>
-            <tr>
-                <td>4%</td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;">от
-                        77 000 до 95 000 руб.</strong></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>5%</td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;">от
-                        96 000 до 180 000 руб.</strong></td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;">свыше
-                        90 000 руб.</strong></td>
-            </tr>
-            <tr>
-                <td>10%</td>
-                <td><strong
-                        style="color: rgb(0, 0, 0); font-family: tahoma, arial, helvetica, sans-serif; font-size: 13px; text-align: right;">свыше
-                        180000 руб.</strong></td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="container">
+            <div class="container2">
+                <div class="about_title">
+                    Скидки и акции
+                </div>
+
+
+                <div>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>препараты, реализуемые с товарным
+                                знаком «сельхозэкосервис» ( отмечено в прайсе
+                                **)</th>
+                            <th>препараты наших партнеров (коммерческий
+                                прайс)</th>
+                        </tr>
+                        <tr>
+                            <td>2%</td>
+                            <td>от 18500 до 37 000 руб.</td>
+                            <td>от 20000 до 40 000 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>3%</td>
+                            <td>от 38 000 до 76 000 руб.</td>
+                            <td>от 40000 до 90 000 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>4%</td>
+                            <td>от 77 000 до 95 000 руб.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5%</td>
+                            <td>от 96 000 до 180 000 руб.</td>
+                            <td>свыше 90 000 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>10%</td>
+                            <td>свыше 180000 руб.</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container_footer">
             <div class="footer_list">
+
                 <div class="footer_item">
                     <div class="footer_item_title">
                         <p class="text32Light">Контакты</p>
@@ -124,7 +113,7 @@
                     <div class="footer_item_content">
                         <div class="footer_menu_item_content">
                             <ul>
-                                <li><a href="price.html">Прайс-листы</a></li>
+                                <li><a href="main.html">Главная</a></li>
                                 <li><a href="catalog.html">Каталог</a></li>
                                 <li><a href="about.html">О компании</a></li>
                                 <li><a href="contact.html">Контакты</a></li>
@@ -132,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </footer>

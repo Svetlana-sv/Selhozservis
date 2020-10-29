@@ -5,9 +5,9 @@ class Header {
 
     render(count) {
         const html = `
-            
+        
                 <div class="header-counter" onclick="headerPage.handlerOpenShoppingPage();">
-                <img src="img/favicon.png"> ${count}
+                <img src="img/cart.png" style="width: auto"> ${count}
                 </div>
             
         `;

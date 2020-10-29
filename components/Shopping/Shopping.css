@@ -14,6 +14,9 @@
 	padding: var(--spacing-medium);
 	font-weight: bold;
 }
+.shopping-element__pack{
+	padding: var(--spacing-medium);
+}
 .shopping-element__price {
 	padding: var(--spacing-medium);
 	color: var(--color-unaccent);

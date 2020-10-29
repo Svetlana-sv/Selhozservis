@@ -8,12 +8,13 @@ class Shopping {
         let htmlCatalog = '';
         let sumCatalog = 0;
 
-        CATALOG.forEach(({ id, name, price }) => {
+        CATALOG.forEach(({ id, name, pack, price }) => {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
                     <tr>
-                        <td class="shopping-element__name">⚡️ ${name}</td>
-                        <td class="shopping-element__price">${price.toLocaleString()} USD</td>
+                        <td class="shopping-element__name">${name}</td>
+                        <td class="shopping-element__pack">${pack}</td>
+                        <td class="shopping-element__price">${price.toLocaleString()} руб.</td>
                     </tr>
                 `;
                 sumCatalog += price;
@@ -26,8 +27,8 @@ class Shopping {
                 <table>
                     ${htmlCatalog}
                     <tr>
-                        <td class="shopping-element__name">💥 Сумма:</td>
-                        <td class="shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
+                        <td class="shopping-element__name"> Сумма:</td>
+                        <td class="shopping-element__price">${sumCatalog.toLocaleString()} руб.</td>
                     </tr>
                 </table>
             </div>
