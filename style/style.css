@@ -168,7 +168,7 @@ header {
     
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
     min-height: 114px;
     border-bottom: 2px solid #3a5901;
     background-color: #86b72f;
@@ -180,7 +180,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+   
 }
 
 header a {
@@ -218,14 +218,25 @@ header a.active {
 
 
 
-@media screen and (max-width: 500px) {
+@media (max-width: 700px) {
     header {
         text-align: center;
+        flex-wrap: nowrap;
     }
     .header_container{
         flex-direction: column;
+        flex-wrap: nowrap;
     }
-    
+    .header_menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: nowrap;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     header a {
         height: none;
         float: none;
@@ -233,13 +244,7 @@ header a.active {
         text-align: center;
     }
 
-    .header_menu {
-        text-align: center;
-        float: none;
-        padding: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+    
 }
 
 
