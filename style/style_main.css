@@ -28,6 +28,35 @@
 
 }
 
+
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+
+.col1 {
+    max-width: 20.68%;
+    flex-wrap: wrap;
+}
+
+.col2 {
+    width: 75.5%;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
 .img_block_advertising {
     height: 213px;
     margin-top: 9px;
