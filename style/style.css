@@ -25,7 +25,7 @@
 body {
     margin: 0;
     background-color: #fff;
-}
+font-family: serif;}
 
 
 main {
@@ -113,14 +113,6 @@ a {
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-footer a:visited {
-    color: #000000;
-}
 
 p {
     margin-top: 0;
@@ -320,6 +312,17 @@ footer {
     color: rgb(0, 0, 0);
     line-height: 1.717;
     text-align: center;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: black;
+}
+footer a:link{  
+    color: black;
+}
+
+footer a:visited {
+    color: #000000;
 }
 
 @media (max-width: 1199px) {
