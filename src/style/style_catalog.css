@@ -78,6 +78,10 @@ body {
 	justify-content: space-evenly;
 }
 
+.download_files_container button{
+	outline: 0;
+}
+
 ::-webkit-scrollbar {
 	width: 8px;
 }

@@ -1,8 +1,6 @@
 /*MAIN FOR MAIN*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
-.selection_begin_photo {
-    position: relative;
-    display: inline-block;
+section .selection_begin_photo {
     margin: 0;
 }
 
@@ -10,29 +8,13 @@
     .about_title{
         font-size: 20px;
     }
+    section .selection_begin_photo {
+        background-image: url(img/main/dacha4_mobile.jpg);
+        overflow: hidden;
+    }
 }
 
-.about_title {
-    padding-top: 28px;
-    padding-bottom: 59px;
-    text-align: center;
-    font-size: 32px;
-    font-family: "Montserrat";
-    color: rgb(134, 183, 47);
-    font-weight: bold;
-    line-height: 0.966;
-}
 
-.container8 {
-    max-width: 1129px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 43px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
 
 .intro{
     padding: 20px 20px;
@@ -106,9 +88,7 @@ a input[type="submit"]:active {
     background: #a5e731;
     box-shadow: 0 2px #fafafa inset;
 }
-
-
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .selection_begin_photo {
         background-image: url(img/main/dacha4_mobile.jpg);
     }
