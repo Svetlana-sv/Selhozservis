@@ -1,11 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
+
+@media (max-width: 1199px){
+        .logo_and_text {
+                flex-direction: column;
+                padding: 10px 10px;
+        }
+
+        .logo_and_text_img {
+                padding-bottom: 20px;
+                padding-right: 0px;
+                text-align: center;
+                justify-content: center;
+        }
+
+        .logo_and_text_text {
+                max-width: 100%;
+                padding: 0px;
+        }
+
+        .content_text {
+                padding: 10px 10px;
+        }
+}
+
+
+
 .img_logo_about {
-        width: 150px;
-        height: 143px;
+        width: 160px;
+        height: auto;
 }
 
 
 .about_content {
         max-width: 100%;
+        padding: 20px;
         justify-content: center;
         flex-wrap: wrap;
         text-align: left;
@@ -13,56 +41,29 @@
 }
 
 .logo_and_text {
+        
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
         padding-bottom: 47px;
+        padding-left: 58px;
+        padding-right: 58px;
 }
 
-.logo_and_text_img {
-        max-width: 21.45%;
+.logo_and_text_img {     
         align-items: center;
+        padding-right: 58px;
 }
 
-.logo_and_text_text {
-        max-width: 68.8%;
+.logo_and_text_text {      
         text-align: left;
 }
 
 .content_text {
         padding-left: 58px;
+        padding-right: 58px;
         text-align: left;
         padding-bottom: 127px;
-        max-width: 93%;
+        max-width: 100%;
 }
 
-@media (max-width: 480px) {
-        .container2 {
-                max-width: 90%;
-                align-items: center;
-                margin: 0 auto;
-        }
 
-        .about_content {
-                padding-left: 30px;
-                flex-direction: column;
-                align-items: center;
-        }
-
-        .logo_and_text {
-                flex-direction: column;
-        }
-
-        .logo_and_text_img {
-                padding-bottom: 20px;
-        }
-
-        .logo_and_text_text {
-                max-width: 93%;
-        }
-
-        .content_text {
-                padding-left: 0;
-
-        }
-}

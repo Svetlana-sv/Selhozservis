@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
+
 table {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-family: "Montserrat", Sans-Serif;
     font-size: 14px;
     border-radius: 10px;
     border-spacing: 0;
@@ -45,4 +47,19 @@ table {
     div .table_sale{
         display: flex;
         align-items: center;
+    }
+
+    @media (max-width: 500px){
+        td {
+            padding: 2px 0px;
+        }
+    
+        th {
+    
+            padding: 2px 0px;
+        }
+        
+        table {
+            max-width: 100%;
+        }
     }

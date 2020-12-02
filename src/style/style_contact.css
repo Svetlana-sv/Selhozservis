@@ -1,5 +1,10 @@
 /*MAIN*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
 
+
+body{
+    font-family: "Montserrat", serif;
+}
 .about_text {
     max-width: 55%;
     justify-content: space-between;
@@ -13,36 +18,22 @@
     margin-left: 53px;
 }
 
-.row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-bottom: 18px;
-}
 
-.col1 {
-    max-width: 20.68%;
-}
-
-.col2 {
-    width: 75.5%;
-}
 
 .contact_img {
-    width: 35%;
-    position: relative;
-   margin-right: 31px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;    
 }
 .img_office {
-    padding-top: 10px;
-    width: 100%;
+    padding-top: 20px;
     max-width: 500px;
     height: auto;
 }
 
 
 .map {
-    padding-top: 74px;
+    padding-top: 50px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -58,18 +49,53 @@
     }
     .container2 {
         
-        max-width: 90%;
+        max-width: 100%;
         align-items: center;
         margin: 0 auto;
     }
-    .contact_img{
-        max-width: 100%;
+    .img_office{
+        width: 300px;
         height: auto;
-        margin-right: 53px;
+
     }
     .content{
         flex-direction: column;
     }
    
 }
+
+
+
+
+
+
+
+
+
+
+
+.archive {
+    max-width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,400px));
+    grid-gap: 25px;
+    grid-auto-flow: dense;
+  }
+
+ 
+  
+  /* Одноколоночное отображение на мобильных */
+  @media (max-width: 459px) {
+    .archive {
+        grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
+
+  .container2{
+      width: 923px;
+  }
 

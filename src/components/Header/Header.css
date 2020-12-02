@@ -9,4 +9,5 @@
     padding-right: var(--spacing-small);
     font-weight: bold;
     cursor: pointer;
+    color: #fff;
 }

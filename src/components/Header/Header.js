@@ -7,7 +7,7 @@ class Header {
         const html = `
         
                 <div class="header-counter" onclick="headerPage.handlerOpenShoppingPage();">
-                <img src="img/cart.png" style="width: auto"> ${count}
+                <img src="img/cart-icon1.png" style="width: auto"> ${count}
                 </div>
             
         `;

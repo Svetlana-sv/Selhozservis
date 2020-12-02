@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
+
+body {
+    font-family: "Montserrat";
+}
+
+.content_text {
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding-left: 58px;
+    padding-right: 58px;
+    text-align: left;
+    padding-bottom: 127px;
+    max-width: 100%;
+}
+
+@media (max-width: 500px) {
+    .content_text {
+        padding: 10px 10px;
+    }
+}

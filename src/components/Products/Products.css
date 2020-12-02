@@ -6,15 +6,25 @@
 	max-width: 1200px;
 	margin: var(--spacing-large) auto;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
+
 @media (max-width: 680px){
 	.products-container {
 		display: flex;
-    flex-direction: column;
+	    flex-direction: column;
+	   -webkit-flex-direction: column;
+	   -ms-flex-direction: column;
 	}
+}
+
+span {
+	font-family: "Montserrat";
 }
 .products-element {
 	display: flex;
 	flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	justify-content: flex-end;
 	padding: 25px 20px;
 	border-radius: var(--border-radius);
@@ -23,10 +33,12 @@
 }
 .products-element__name {
 	margin-bottom: auto;
+	font-family: "Montserrat";
 	text-transform: uppercase;
 	font-weight: bold;
 }
 .products-element__target{
+	font-family: "Montserrat";
 	margin-bottom: auto;
 	text-transform: none;
 }

@@ -2,30 +2,15 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "SourceSerifPro-Regular";
-    src: url("/fonts/SourceSerifPro-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
 
-@font-face {
-    font-family: "SourceSerifPro-Bold";
-    src: url("/fonts/SourceSerifPro-Bold.ttf");
-}
 
-@font-face {
-    font-family: "SourceSerifPro-SemiBold";
-    src: url("/fonts/SourceSerifPro-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: "SourceSerifPro-Light";
-    src: url("/fonts/SourceSerifPro-Light.ttf");
-}
 
 body {
     margin: 0;
     background-color: #fff;
-font-family: serif;}
+    font-family: "Montserrat", sans-serif;
+}
 
 
 main {
@@ -47,6 +32,7 @@ ul {
 ul li {
     list-style-type: none;
 }
+
 /*из contact для каркаса*/
 .container {
     margin: 0;
@@ -69,7 +55,7 @@ ul li {
     padding-bottom: 59px;
     text-align: center;
     font-size: 32px;
-    font-family: "SourceSerifPro-SemiBold";
+    font-family: "Montserrat";
     color: rgb(134, 183, 47);
     font-weight: bold;
     line-height: 0.966;
@@ -81,25 +67,27 @@ ul li {
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    
+
 }
 
 
 
 
-.text14Regular{
-    font-size: 14px;
-    font-family: "SourceSerifPro-Regular";
+.text14Regular {
+    font-size: 16px;
+    font-family: "Montserrat";
     color: rgb(1, 1, 1);
     line-height: 2.208;
 }
-.text14SemiBold{
-    font-size: 14px;
-    font-family: "SourceSerifPro-SemiBold";
+
+.text14SemiBold {
+    font-size: 16px;
+    font-family: "Montserrat";
     font-weight: bold;
     color: rgb(1, 1, 1);
     line-height: 2.208;
 }
+
 /**/
 
 .container_center {
@@ -116,7 +104,9 @@ a {
 
 p {
     margin-top: 0;
+    font-family: "Montserrat";
 }
+
 header .header_logo {
     padding-left: 25px;
 }
@@ -128,7 +118,7 @@ header .header_menu {
 
 header .header_email {
     padding-right: 25px;
-    max-width:100%;
+    max-width: 100%;
     margin: 0;
     display: flex;
     align-items: center;
@@ -143,6 +133,7 @@ header .img_message {
 }
 
 header div.img_email_message {
+    display: flex;
     max-width: 20%;
     align-items: center;
     vertical-align: middle;
@@ -150,7 +141,7 @@ header div.img_email_message {
 }
 
 header div.img_email_textmessage {
-max-width: 85%;
+    max-width: 85%;
     height: 100%;
 }
 
@@ -158,26 +149,27 @@ max-width: 85%;
 header {
     margin: 0;
     max-width: 100%;
-    
+
     align-items: center;
     justify-content: space-between;
-    
+
     min-height: 114px;
     border-bottom: 2px solid #3a5901;
     background-color: #86b72f;
 }
-.header_container{
+
+.header_container {
     padding-top: 10px;
     margin: 0;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 header a {
-    font-family: "Source Serif Pro-Regular";
+    font-family: "Montserrat";
     float: left;
     color: #fff;
     text-align: center;
@@ -191,6 +183,8 @@ header a {
 }
 
 header img.logo {
+    text-align: center;
+    justify-content: center;
     width: 94px;
     height: 92px;
 }
@@ -199,7 +193,8 @@ header div.header_menu a:hover {
     border-radius: 20px;
     background-image: linear-gradient(to right, #c8f151, #b9ee38, #a5e731);
 }
-header div.header_email a:hover{
+
+header div.header_email a:hover {
     text-decoration: underline;
 }
 
@@ -216,18 +211,30 @@ header a.active {
         text-align: center;
         flex-wrap: nowrap;
     }
-    .header_container{
+
+    header .header_logo {
+        text-align: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .header_container {
         flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
         flex-wrap: nowrap;
     }
+
     .header_menu {
         display: flex;
         flex-direction: column;
+	   -webkit-flex-direction: column;
+	   -ms-flex-direction: column;
         text-align: center;
         flex-wrap: nowrap;
         padding: 0;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     header a {
@@ -236,9 +243,11 @@ header a.active {
         display: block;
         text-align: center;
     }
-
-    
 }
+
+
+
+
 
 
 
@@ -298,7 +307,7 @@ footer {
 
 .footer_item_title {
     font-size: 32px;
-    font-family: "SourceSerifPro-Light";
+    font-family: "Montserrat";
     color: rgb(0, 0, 0);
     line-height: 0.966;
     text-align: center;
@@ -308,16 +317,23 @@ footer {
 
 .footer_item_content {
     font-size: 18px;
-    font-family: "SourceSerifPro-Light";
+    font-family: "Montserrat";
     color: rgb(0, 0, 0);
     line-height: 1.717;
     text-align: center;
 }
+
+footer .footer_item_content ul {
+    padding: 0;
+    margin: 0;
+}
+
 footer a:hover {
     text-decoration: underline;
     color: black;
 }
-footer a:link{  
+
+footer a:link {
     color: black;
 }
 
@@ -340,5 +356,6 @@ footer a:visited {
 
     footer .footer_item {
         margin: 0 auto;
+        padding: 0;
     }
 }

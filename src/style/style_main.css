@@ -1,5 +1,5 @@
 /*MAIN FOR MAIN*/
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
 .selection_begin_photo {
     position: relative;
     display: inline-block;
@@ -18,34 +18,80 @@
     padding-top: 50px;
 }
 
-.box {
-    width: 200px;
-    height: 200px;
-    border: 10px solid #79a42e;
-    background-color: #ffffff;
-    padding-bottom: 48px;
+.intro{
+    padding: 20px 20px;
+}
+
+form{
     text-align: center;
-
+    justify-content: center;
 }
 
+.submit{
+    text-align: center;
+    justify-content: center;
+}
 
-
-.row {
+.submit_group{
+    text-align: center;
+    justify-content: center;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-bottom: 18px;
+    flex-direction: column;
 }
 
-.col1 {
-    max-width: 20.68%;
-    flex-wrap: wrap;
+.subm_name{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+.subm_text{
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.col2 {
-    width: 75.5%;
-    flex-wrap: wrap;
+input{
+    margin-bottom: 20px;
+    max-width: 300px;
 }
+
+input[type="text"]{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 20px;
+    
+}
+
+input[type="submit"]{
+    width: 200px;
+    height: 45px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #c8f151, #b9ee38, #a5e731);
+    box-shadow: 0 0 4px 2px #fff;
+    transition: 0.2s;
+}
+
+a input[type="submit"]:hover { background: #a3f01e; }
+a input[type="submit"]:active {
+    background: #a5e731;
+    box-shadow: 0 2px #fafafa inset;
+}
+
+
+
 
 
 
