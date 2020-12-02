@@ -50,17 +50,6 @@ ul li {
     padding-bottom: 50px;
 }
 
-.about_title {
-    padding-top: 28px;
-    padding-bottom: 59px;
-    text-align: center;
-    font-size: 32px;
-    font-family: "Montserrat";
-    color: rgb(134, 183, 47);
-    font-weight: bold;
-    line-height: 0.966;
-}
-
 .content {
     display: flex;
     max-width: 100%;
